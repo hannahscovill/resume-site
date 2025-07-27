@@ -68,15 +68,8 @@ const Resume = () => {
             
             <Experience 
               title="Nike Studios"
-              content={[
-                "The Nike Studios were my favorite project I've done at Nike. From the beginning through automating myself out of the role, I was instrumental to seamlessly integrating FitLab's digital footprint into Nike's technology ecosystem.",
-                "I deployed solutions where necessary in Node.js, Golang, Python and an OIDC example in React.",
-                "The greenfield nature of this project gave me the experience to set up new projects from end-to-end at Nike across multiple engineering disciplines including DevOps, back end, data analytics and data engineering, etc.",
-                "Mentored and developed more junior engineers both involved and not involved in my assigned projects.",
-                "Contributed to Nike's engineering products including their new data lake and auth libraries.",
-                "Built data pipelines and dashboards using SQL, Python and Databricks examining Nike member behavior."
-              ]}
-              image="https://nikestudios.com/static/bd4f829f3940873f6c40761dae7365fe/d6d06/designed-everybody.webp"
+              content={[]}
+              image="./public/studios.jpeg"
               imageAlt="Nike Studios designed for everybody"
             />
             

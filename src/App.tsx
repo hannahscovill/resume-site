@@ -1,5 +1,5 @@
 import Collage from "./components/TsfSign/Collage"
-import Resume from "./components/Resume"
+import MenuButton from "./components/MenuButton"
 
 function App() {
 
@@ -16,7 +16,9 @@ function App() {
         <Collage className="order-1 col-start-1 row-span-4" />
       </div>
 
-      <Resume />
+      <div className="flex justify-center mt-8">
+        <MenuButton buttonCopy="Download Resume" onClick={() => window.open('/resume.pdf', '_blank')} className="w-64 h-16" />
+      </div>
     </div>
   )
 }
