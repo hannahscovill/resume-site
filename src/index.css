@@ -1,18 +1,24 @@
 @import "tailwindcss";
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Verdana, sans-serif;
+  /* font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; */
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  /* color-scheme: light dark; */
+  /* color: rgba(255, 255, 255, 0.87); */
+  background-color: #edede4;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-weight: 100;
+  font-size: large;
 }
 
 a {
@@ -23,3 +29,15 @@ a {
 a:hover {
   color: #535bf2;
 }
+
+/* .spath {
+  clip-path: path('
+    M 213.1,6.7
+    c-32.4-14.4-73.7,0-88.1,30.6
+    C 110.6,4.9,67.5-9.5,36.9,6.7
+    C 2.8,22.9-13.4,62.4,13.5,110.9
+    C 33.3,145.1,67.5,170.3,125,217
+    c 59.3-46.7,93.5-71.9,111.5-106.1
+    C263.4,64.2,247.2,22.9,213.1,6.7z
+    ');
+} */
