@@ -28,7 +28,7 @@ function App() {
           desination="/scovillResume.pdf" />
         <MenuButtonSecretLink
           copy="@ me"
-          desination='mailto:hnsvill@gmail.com?subject=@%20you'
+          desination='mailto:hnsvill@gmail.com'
           targetBlank={false} />
       </div>
 
@@ -37,7 +37,7 @@ function App() {
         <p className="mx-[1rem]">
           People describe me as proactive and resourceful. I learned to code in my administrative assistant job in 2016 and U.S. Bank's entire mortgage division used my apps.
           <br /><br />
-          My tech experience has been mostly backend, data and DevOps oriented. I've been working to earn the title of <span className="relative group">"swiss army dev"<span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none"> or renaissance woman</span></span>. I've been gaining professional experience in React, serving on Nike's PRIDE Network board, coaching CrossFit and learning to fly.
+          My tech experience has been mostly backend, data and DevOps oriented. I've been working to earn the title of <span className="relative group">"swiss army dev"<span className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-2 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap pointer-events-none"> or renaissance woman</span></span>. I've been gaining professional experience in React, exploring with AI tools, serving on Nike's PRIDE Network board, coaching CrossFit and learning to fly.
           <br /><br />
           I'm based in the Portland, Oregon area.
         </p>
