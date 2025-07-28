@@ -1,13 +1,16 @@
-const MenuButton = ({
-  buttonCopy,
-  onClick,
-  className }: {
-    buttonCopy: string
-    onClick?: () => void
-    className?: string
-  }) => {
+const MenuButtonSecretLink = ({
+  copy,
+  desination,
+  targetBlank = true,
+  className
+}: {
+  copy: string
+  desination: string,
+  targetBlank?: boolean,
+  className?: string
+}) => {
   return (
-    <div className={`relative m-[1rem] min-w-[120px] ${className}`}>
+    <div className={`relative m-[1rem] min-w-[120px] w-64 h-16 ${className}`}>
       <div
         className="sage-box absolute w-full h-full -z-10 translate-x-[.5rem] translate-y-[.5rem]"
         style={{ backgroundColor: '#949c8f' }}
@@ -20,16 +23,19 @@ const MenuButton = ({
         <div
           className=" absolute border-5 w-full h-full z-20 flex items-center justify-center font-bold group-hover:translate-x-[-.25rem] group-hover:translate-y-[-.25rem] group-active:translate-x-[.25rem] group-active:translate-y-[.25rem] transition-all duration-200"
         >
-          <button
+          <a href={desination} target={targetBlank ? '_blank' : undefined}>
+            {copy}
+          </a>
+          {/* <button
             onClick={onClick}
             className="relative font-bold text-lg m-2"
           >
             {buttonCopy}
-          </button>
+          </button> */}
         </div>
       </div>
     </div>
   )
 }
 
-export default MenuButton
+export default MenuButtonSecretLink
