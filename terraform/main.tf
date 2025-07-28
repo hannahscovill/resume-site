@@ -27,7 +27,6 @@ resource "aws_cloudfront_distribution" "resume_site" {
   aliases         = [var.domain_name]
   enabled         = true
   is_ipv6_enabled = true
-  web_acl_id      = aws_wafv2_web_acl.resume_site.arn
 
   origin {
     domain_name              = aws_s3_bucket.resume_site.bucket_regional_domain_name
