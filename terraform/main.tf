@@ -10,20 +10,12 @@ provider "aws" {
   region = "us-east-1"
 }
 
-resource "aws_cloudfront_function" "serve_index_files" {
-  name    = "redirect-to-index-files"
-  runtime = "cloudfront-js-1.0"
-  comment = "managed by terraform"
-  publish = true
-  code    = file("redirect.js")
-}
-
 resource "aws_s3_bucket" "resume_site" {
   bucket = var.app_name
 }
 
 data "aws_acm_certificate" "resume_site" {
-  domain = "hannahscovill.com"
+  domain = var.domain_name
 }
 
 data "aws_cloudfront_cache_policy" "managed_caching_optimized" {
@@ -32,7 +24,7 @@ data "aws_cloudfront_cache_policy" "managed_caching_optimized" {
 
 resource "aws_cloudfront_distribution" "resume_site" {
   price_class     = "PriceClass_100"
-  aliases         = ["hannahscovill.com"]
+  aliases         = [var.domain_name]
   enabled         = true
   is_ipv6_enabled = true
   web_acl_id      = aws_wafv2_web_acl.resume_site.arn

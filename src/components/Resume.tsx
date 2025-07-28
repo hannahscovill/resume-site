@@ -69,7 +69,7 @@ const Resume = () => {
             <Experience 
               title="Nike Studios"
               content={[]}
-              image="./public/studios.jpeg"
+              image="/studios.jpeg"
               imageAlt="Nike Studios designed for everybody"
             />
             

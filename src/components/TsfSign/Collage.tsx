@@ -10,9 +10,9 @@ const Collage = ({className}: { className?: string }) => {
                 style={{ border: '5px solid' }}
             ></div>
             <div className="grid grid-cols-2 grid-rows-2 aspect-square relative z-10 translate-x-[-1rem] translate-y-[-1rem]">
-                <img className="row-span-2 w-full h-full object-cover " src="public/IMG_6951.jpeg" />
-                <img className="row-span-1 w-full h-full object-cover object-left" src="public/IMG_5113.jpeg" />
-                <img className="row-span-1 w-full h-full object-cover object-center" src="public/IMG_5417.jpeg" />
+                <img className="row-span-2 w-full h-full object-cover " src="/IMG_6951.jpeg" />
+                <img className="row-span-1 w-full h-full object-cover object-left" src="/IMG_5113.jpeg" />
+                <img className="row-span-1 w-full h-full object-cover object-center" src="/IMG_5417.jpeg" />
             </div>
         </div>
     )

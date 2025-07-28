@@ -3,3 +3,9 @@ variable "app_name" {
   type        = string
   default     = "resume-site"
 }
+
+variable "domain_name" {
+  description = "Domain name for the website"
+  type        = string
+  default     = "hannahscovill.com"
+}
