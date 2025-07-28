@@ -19,7 +19,7 @@ resource "aws_cloudfront_function" "serve_index_files" {
 }
 
 resource "aws_s3_bucket" "resume_site" {
-  bucket = "resume-site"
+  bucket = var.app_name
 }
 
 data "aws_acm_certificate" "resume_site" {
