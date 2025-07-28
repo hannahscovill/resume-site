@@ -28,7 +28,7 @@ function App() {
           desination="/scovillResume.pdf" />
         <MenuButtonSecretLink
           copy="@ me"
-          desination='mailto:hnsvill@gmail.com'
+          desination='mailto:hnsvill@gmail.com?subject=@%20you'
           targetBlank={false} />
       </div>
 
