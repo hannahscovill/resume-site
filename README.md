@@ -1,6 +1,6 @@
 # Resume Website
 
-Live at [hannahscovill.com](hannahscovill.com)
+Live at [hannahscovill.com](https://hannahscovill.com/)
 
 Waiting on dns propagation for scovill.dev
 
