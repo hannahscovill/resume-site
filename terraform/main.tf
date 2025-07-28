@@ -50,10 +50,6 @@ resource "aws_cloudfront_distribution" "resume_site" {
     compress               = true
     viewer_protocol_policy = "redirect-to-https"
 
-    function_association {
-      event_type   = "viewer-request"
-      function_arn = aws_cloudfront_function.serve_index_files.arn
-    }
   }
 
   viewer_certificate {
