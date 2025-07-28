@@ -56,7 +56,7 @@ jobs:
           export BUCKET_NAME=$(cat $TF_OUTPUT_FILE | jq -r '.bucket_name.value')
           echo "CloudFront Distribution ID: $CLOUDFRONT_DISTRIBUTION_ID"
           echo "S3 Bucket Name: $BUCKET_NAME"
-          aws s3 sync build/ s3://$BUCKET_NAME --exclude "*.DS_Store"
+          aws s3 sync dist/ s3://$BUCKET_NAME --exclude "*.DS_Store"
           aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRIBUTION_ID --paths '/*' 
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
