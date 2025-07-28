@@ -1,3 +1,18 @@
+# Resume Website
+
+Live at [hannahscovill.com](hannahscovill.com)
+
+Waiting on dns propagation for scovill.dev
+
+
+Uses Terraform and GitHub Actions for deployment to AWS S3 & CloudFormation.
+
+Built in React.ts. Uses Tailwind. Vite for build tooling.
+
+Built with lots of conversations with Claude code.
+
+---
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
