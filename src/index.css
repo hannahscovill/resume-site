@@ -1,18 +1,15 @@
 @import "tailwindcss";
 
 :root {
+  -webkit-font-smoothing: antialiased;
   font-family: Verdana, sans-serif;
   line-height: 1.5;
-  font-weight: 400;
   background-color: #edede4;
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 p {
-  font-weight: 100;
   font-size: large;
 }
 
