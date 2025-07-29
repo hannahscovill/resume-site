@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - progressive-images
 
 env:
   TF_OUTPUT_FILE: '/tmp/terraformOutputs.json'

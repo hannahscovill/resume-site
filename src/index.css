@@ -1,12 +1,18 @@
 @import "tailwindcss";
 
 :root {
+  --focus-color: #0066ff;
   -webkit-font-smoothing: antialiased;
   font-family: Verdana, sans-serif;
   line-height: 1.5;
   background-color: #edede4;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
+}
+
+*:focus {
+  outline: 4px solid var(--focus-color);
+  outline-offset: 2px;
 }
 
 p {

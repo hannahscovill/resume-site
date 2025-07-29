@@ -1,4 +1,4 @@
-import Collage from "./components/TsfSign/Collage"
+import Collage from "./components/Collage"
 import MenuButtonSecretLink from "./components/MenuButton"
 import Footer from "./components/Footer"
 
